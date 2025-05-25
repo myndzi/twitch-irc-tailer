@@ -50,7 +50,7 @@ type ChannelId = string & { __brand__: 'channelid' };
 
   const events = new OrderedMap(combine, 'msgId', 'localTimestamp');
 
-  const WINDOW_SIZE = config.app.window;
+  const WINDOW_SIZE = 1_000;
 
   setInterval(() => {
     const cutoff = Date.now() - WINDOW_SIZE;
