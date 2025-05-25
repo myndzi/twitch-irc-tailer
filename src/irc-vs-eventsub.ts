@@ -1,8 +1,6 @@
 import { loadConfig } from './config/config';
 import { resolve } from 'node:path';
 import { initTwurple } from './twurple';
-import type { EventSubChannelChatMessageEvent } from '@twurple/eventsub-base';
-import { rawDataSymbol } from '@twurple/common';
 import { OrderedMap } from './orderedmap';
 
 type ChannelId = string & { __brand__: 'channelid' };
